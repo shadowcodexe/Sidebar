@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="sidebar">
+
+        <div class="sidebar-arrow">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1L6 5.5L10.5 1" stroke="white" stroke-width="1.5"/>
+            </svg>
+        </div>
+        
+        <div class="sidebar-header">
+            <div class="sidebar-header__logo">W</div>
+            <p class="sidebar-header__title">Organization</p>
+            <span class="sidebar-header__arrow">
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L6 5.5L10.5 1" stroke="white" stroke-width="1.5"/>
+                </svg>
+            </span>
+            
+            <div class="sidebar-header__dropdown">
+                <div class="sidebar-header__dropdown-item sidebar-header__dropdown-add">
+                    <div class="dropdown-item__plus">
+                        <span class="plus">+</span>
+                    </div>
+                    <p class="dropdown-item__plus-title">
+                        Add new organization
+                    </p>
+                </div>
+                <div class="sidebar-header__dropdown-item">
+                    <div class="dropdown-item__logo">
+                        W
+                    </div>
+                    <p class="dropdown-item__title dropdown-item__title-active">
+                        Organization 1
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu">
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg class="dashboard" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9367 8.12739C17.4041 4.84956 14.62 2.41103 11.3005 2.31503C11.1427 2.30885 10.9889 2.36567 10.873 2.47298C10.7571 2.58029 10.6886 2.72928 10.6827 2.88711V2.88711V2.94051L11.0564 8.53166C11.081 8.90804 11.4045 9.19415 11.7811 9.17239L17.3875 8.79863C17.5455 8.78695 17.6923 8.71276 17.7953 8.59249C17.8984 8.47222 17.9493 8.3158 17.9367 8.1579V8.12739Z" stroke="#ffffff80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.418 5.64074C7.77463 5.55825 8.13958 5.74072 8.28756 6.07552C8.32633 6.15427 8.34963 6.23972 8.35621 6.32724C8.43249 7.41038 8.59267 9.78262 8.68421 11.0641C8.69983 11.2949 8.80681 11.51 8.98146 11.6618C9.15611 11.8135 9.38404 11.8894 9.61479 11.8726V11.8726L14.3211 11.5828C14.5312 11.5701 14.7372 11.6449 14.8903 11.7893C15.0434 11.9338 15.13 12.1351 15.1297 12.3455V12.3455C14.9389 15.1875 12.8971 17.5634 10.1161 18.1792C7.33508 18.7951 4.48105 17.5034 3.10831 15.0076C2.69852 14.2893 2.439 13.4952 2.34553 12.6735C2.30557 12.4214 2.29024 12.1659 2.29977 11.9108C2.30786 8.87577 4.43936 6.26071 7.41037 5.64074" stroke="#ffffff80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                  
+                </div>
+                <p class="sidebar-menu__option-title">Dashboard</p>
+                <span class="sidebar-menu__option-popup dashboard-pop">Dashboard</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path class="search" d="M13.5 13.5L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="search" d="M3 9C3 12.3137 5.68629 15 9 15C10.6597 15 12.1621 14.3261 13.2483 13.237C14.3308 12.1517 15 10.654 15 9C15 5.68629 12.3137 3 9 3C5.68629 3 3 5.68629 3 9Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Wholesale Search</p>
+                <span class="sidebar-menu__option-popup search-pop">Search</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M7.5 9.16666L10 11.6667L16.6667 4.99999" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.6667 10C16.6667 13.6819 13.6819 16.6667 9.99999 16.6667C6.3181 16.6667 3.33333 13.6819 3.33333 10C3.33333 6.31811 6.3181 3.33334 9.99999 3.33334C10.7894 3.33334 11.5467 3.47054 12.2495 3.72239" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Your Tasks</p>
+                <span class="sidebar-menu__option-popup tasks-pop">Tasks</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M4 17V3C4 2.44772 4.44772 2 5 2H12.9418C13.2182 2 13.4823 2.11441 13.6713 2.31606L15.7295 4.51151C15.9033 4.69685 16 4.94139 16 5.19545V17C16 17.5523 15.5523 18 15 18H5C4.44772 18 4 17.5523 4 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 6L13 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 14L13 14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 10L13 10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Your Files</p>
+                <span class="sidebar-menu__option-popup files-pop">Files</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M7.15615 6.8633L9.32075 2.50313C9.59863 1.9434 10.4014 1.9434 10.6793 2.50313L12.8439 6.8633L17.6846 7.5668C18.3057 7.65706 18.5532 8.41614 18.1035 8.85159L14.6015 12.2431L15.428 17.0345C15.5341 17.6498 14.8845 18.119 14.3288 17.8284L10 15.565L5.67123 17.8284C5.1155 18.119 4.46591 17.6498 4.57205 17.0345L5.39855 12.2431L1.89646 8.85159C1.44682 8.41614 1.69435 7.65706 2.31544 7.5668L7.15615 6.8633Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Interested products</p>
+                <span class="sidebar-menu__option-popup interested-pop">Interested</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M4.16667 17.5H3.41667C3.41667 17.7744 3.56648 18.0268 3.80728 18.1583C4.04809 18.2898 4.34146 18.2792 4.57224 18.1309L4.16667 17.5ZM15.8333 17.5L15.4278 18.1309C15.6586 18.2792 15.9519 18.2898 16.1927 18.1583C16.4335 18.0268 16.5833 17.7744 16.5833 17.5H15.8333ZM8.91849 14.4453L8.51292 13.8144L8.91849 14.4453ZM11.0815 14.4453L11.4871 13.8144L11.0815 14.4453ZM3.41667 4.5V17.5H4.91667V4.5H3.41667ZM16.5833 17.5V4.5H15.0833V17.5H16.5833ZM13.8333 1.75H6.16667V3.25H13.8333V1.75ZM4.57224 18.1309L9.32406 15.0761L8.51292 13.8144L3.7611 16.8691L4.57224 18.1309ZM10.676 15.0761L15.4278 18.1309L16.2389 16.8691L11.4871 13.8144L10.676 15.0761ZM9.32406 15.0761C9.73582 14.8114 10.2642 14.8114 10.676 15.0761L11.4871 13.8144C10.5812 13.232 9.41879 13.232 8.51292 13.8144L9.32406 15.0761ZM16.5833 4.5C16.5833 2.98122 15.3521 1.75 13.8333 1.75V3.25C14.5237 3.25 15.0833 3.80964 15.0833 4.5H16.5833ZM4.91667 4.5C4.91667 3.80965 5.47632 3.25 6.16667 3.25V1.75C4.64789 1.75 3.41667 2.98122 3.41667 4.5H4.91667Z" fill="white"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Saved Products</p>
+                <span class="sidebar-menu__option-popup saved-pop">Saved</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M1 16C1 16.4142 1.33579 16.75 1.75 16.75C2.16421 16.75 2.5 16.4142 2.5 16H1ZM11.5 16C11.5 16.4142 11.8358 16.75 12.25 16.75C12.6642 16.75 13 16.4142 13 16H11.5ZM1 15.25V16H2.5V15.25H1ZM13 16V15.25H11.5V16H13ZM13 15.25C13 11.9363 10.3137 9.25 7 9.25V10.75C9.48528 10.75 11.5 12.7647 11.5 15.25H13ZM2.5 15.25C2.5 12.7647 4.51472 10.75 7 10.75V9.25C3.68629 9.25 1 11.9363 1 15.25H2.5Z" fill="white"/>
+                        <path d="M17.5 11.875C17.5 12.2892 17.8358 12.625 18.25 12.625C18.6642 12.625 19 12.2892 19 11.875H17.5ZM19 11.875V11.5H17.5V11.875H19ZM19 11.5C19 9.01472 16.9853 7 14.5 7V8.5C16.1569 8.5 17.5 9.84315 17.5 11.5H19ZM11.5 11.5C11.5 9.84315 12.8431 8.5 14.5 8.5V7C12.0147 7 10 9.01472 10 11.5H11.5Z" fill="white"/>
+                        <path d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.5 7.75C15.7426 7.75 16.75 6.74264 16.75 5.5C16.75 4.25736 15.7426 3.25 14.5 3.25C13.2574 3.25 12.25 4.25736 12.25 5.5C12.25 6.74264 13.2574 7.75 14.5 7.75Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <p class="sidebar-menu__option-title">Your Suppliers</p>
+                <span class="sidebar-menu__option-popup suppliers-pop">Suppliers</span>
+            </div>
+
+            <div class="sidebar-menu__option" id="option">
+                <div class="sidebar-menu__option-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                        <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.352 8.66284L15.4373 6.454L16.6667 5.00001L15 3.33334L13.5539 4.56913L11.2981 3.64145L10.7795 1.66667H9.15082L8.62424 3.66761L6.42035 4.59664L5.00001 3.33334L3.33334 5.00001L4.54448 6.49071L3.64376 8.70528L1.66667 9.16667V10.8333L3.6676 11.3796L4.59646 13.5831L3.33334 15L5.00001 16.6667L6.49264 15.4502L8.66418 16.3436L9.16667 18.3333H10.8333L11.3371 16.3443L13.5459 15.4296C13.9141 15.6928 15 16.6667 15 16.6667L16.6667 15L15.4299 13.5412L16.3449 11.3317L18.3332 10.8143L18.3333 9.16667L16.352 8.66284Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>                        
+                </div>
+                <p class="sidebar-menu__option-title">Settings</p>
+                <span class="sidebar-menu__option-popup settings-pop">Settings</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
